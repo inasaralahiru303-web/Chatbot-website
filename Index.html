@@ -1,11 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Chatbot</title>
+    <link rel="stylesheet" href="app/style.css">
 </head>
 <body>
-    
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        🤖 My AI Chatbot
+        <p>Online | Always here to help</p>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+        <div class="bot-message">
+            Hello! 👋 How can I help you?
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput"
+        placeholder="Type your message...">
+
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script src="app/app.js"></script>
 </body>
 </html>
